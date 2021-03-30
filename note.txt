@@ -1,0 +1,4 @@
+git init -> inicia o git na sua pasta local
+git add . -> adiciona todos os itens da sua pasta ao git
+git commit -m "TEXTO" -> da nome a nova versão que você está comitando!
+git push -> sobe todos os arquivos adicionados no Commit para o github!
