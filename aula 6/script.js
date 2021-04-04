@@ -1,3 +1,5 @@
+//Variáveis são caixinhas da memória
+
 var paulo = {
     nome: "Paulo",
     vitorias: 2,
@@ -14,7 +16,8 @@ var rafa = {
     pontos: 0
 }
 
-rafa.pontos = calculaPontos(rafa)
+//Armazenando uma função dentro de uma variável
+rafa.pontos = calculaPontos(rafa) 
 paulo.pontos = calculaPontos(paulo)
 
 function calculaPontos(jogador){
@@ -35,7 +38,7 @@ function exibirJogadoresNaTela(jogadores){
         html += "<td>" + jogadores[i].derrotas + "</td>"
         html += "<td>" + jogadores[i].pontos + "</td>"
         html += "<td><button onClick='adicionarVitoria(" +  i + ")'>Vitória</button></td>"
-        html += "<td><button onClick='dicionarEmpate(" +  i + ")'>Empate</button></td>"
+        html += "<td><button onClick='adicionarEmpate(" +  i + ")'>Empate</button></td>"
         html += "<td><button onClick='adicionarDerrota(" +  i + ")'>Derrota</button></td></tr>"
     }
     var tabelaJogadores = document.getElementById("tabelaJogadores")
